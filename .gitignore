@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Local-only admin tool (never publish)
+admin.html
+
 # Tooling artifacts
 .preflight/
 .screenshots/
