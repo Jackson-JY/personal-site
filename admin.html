@@ -146,7 +146,7 @@ html, body {
           <p class="text-primary font-mono text-xs tracking-widest uppercase mb-2">Timeline admin</p>
           <h1 class="text-3xl font-bold tracking-tight">Manage photos &amp; descriptions</h1>
         </div>
-        <a href="about.html" class="text-sm font-mono text-muted-foreground hover:text-primary transition-colors duration-200">&larr; back to site</a>
+        <a href="index.html" class="text-sm font-mono text-muted-foreground hover:text-primary transition-colors duration-200">&larr; back to site</a>
       </div>
 
       <!-- Actions -->
@@ -188,10 +188,7 @@ html, body {
 
     <script>
       const DRAFT_KEY = "jacksons-timeline-draft";
-      const DATA_URL = new URL(
-        (location.pathname.indexOf("/pages/") !== -1 ? "../" : "") + "data/timeline.json",
-        location.href
-      ).href;
+      const DATA_URL = new URL("data/timeline.json", location.href).href;
 
       let entries = [];
 

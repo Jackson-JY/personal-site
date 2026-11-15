@@ -10,7 +10,7 @@
       "version": 1,
       "createdAt": 1763164800000,
       "devMetadata": {
-        "htmlSrc": "pages/about.html",
+        "htmlSrc": "index.html",
         "interactions": []
       },
       "canvasData": {
@@ -26,7 +26,7 @@
       "version": 1,
       "createdAt": 1794726000000,
       "devMetadata": {
-        "htmlSrc": "pages/admin.html",
+        "htmlSrc": "admin.html",
         "interactions": []
       },
       "canvasData": {

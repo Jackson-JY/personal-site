@@ -205,11 +205,8 @@ html, body {
         categoryId: "DIC_kwDOVvO7jc4DLMFX"
       };
 
-      // Works both in local preview (pages/about.html) and deployed root (index.html)
-      const DATA_URL = new URL(
-        (location.pathname.indexOf("/pages/") !== -1 ? "../" : "") + "data/timeline.json",
-        location.href
-      ).href;
+      // Relative to this page, which sits at the site root
+      const DATA_URL = new URL("data/timeline.json", location.href).href;
 
       function esc(value) {
         return String(value == null ? "" : value)
