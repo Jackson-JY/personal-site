@@ -1,0 +1,128 @@
+{
+  "name": "Jackson's Personal Site",
+  "version": 1,
+  "description": "A dark, tech-forward timeline of Jackson's life across New Zealand cities, with per-entry Giscus comments and a no-login admin page for managing entries.",
+  "data": [
+    {
+      "id": "page-about",
+      "title": "Timeline — Jackson Yang",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1763164800000,
+      "devMetadata": {
+        "htmlSrc": "pages/about.html",
+        "interactions": []
+      },
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0
+      }
+    },
+    {
+      "id": "page-admin",
+      "title": "Timeline Admin",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1794726000000,
+      "devMetadata": {
+        "htmlSrc": "pages/admin.html",
+        "interactions": []
+      },
+      "canvasData": {
+        "x": 480,
+        "y": 0,
+        "group": 0
+      }
+    },
+    {
+      "id": "image-001",
+      "title": "头像",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1794720264916,
+      "devMetadata": {
+        "imageSrc": "assets/avatar-portrait.jpg"
+      },
+      "canvasData": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "image-002",
+      "title": "南阿尔卑斯山脉",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1794720264917,
+      "devMetadata": {
+        "imageSrc": "assets/nz-mountains-lake.jpg"
+      },
+      "canvasData": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "image-003",
+      "title": "惠灵顿海滨",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1794720264918,
+      "devMetadata": {
+        "imageSrc": "assets/nz-wellington-waterfront.jpg"
+      },
+      "canvasData": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "image-004",
+      "title": "奥克兰天际线",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1794720264919,
+      "devMetadata": {
+        "imageSrc": "assets/nz-auckland-skyline.jpg"
+      },
+      "canvasData": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "image-005",
+      "title": "皇后镇",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1794720264920,
+      "devMetadata": {
+        "imageSrc": "assets/nz-queenstown.jpg"
+      },
+      "canvasData": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "image-006",
+      "title": "霍比特人小屋",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1794720264921,
+      "devMetadata": {
+        "imageSrc": "assets/nz-hobbits-house.jpg"
+      },
+      "canvasData": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "desktop",
+    "projectName": "Jackson's Personal Site"
+  }
+}

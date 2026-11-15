@@ -1,0 +1,56 @@
+:root {
+  /* ===== Dark tech palette ===== */
+  --brand-background: #0A0A0F;
+  --brand-foreground: #F5F5F7;
+  --brand-card: #14141C;
+  --brand-card-foreground: #F5F5F7;
+  --brand-popover: #14141C;
+  --brand-popover-foreground: #F5F5F7;
+  --brand-primary: #00E5C8;
+  --brand-primary-foreground: #0A0A0F;
+  --brand-muted: #1C1C26;
+  --brand-muted-foreground: #8B8B98;
+  --brand-border: #2A2A36;
+  --brand-input: #14141C;
+  --brand-ring: #00E5C8;
+
+  /* ===== Semantic state colors (status only) ===== */
+  --brand-success: #34D399;
+  --brand-warning: #FBBF24;
+  --brand-error: #F87171;
+  --brand-info: #60A5FA;
+
+  /* ===== Radius scale ===== */
+  --brand-radius-xs: 2px;
+  --brand-radius-sm: 4px;
+  --brand-radius-md: 8px;
+  --brand-radius-lg: 12px;
+  --brand-radius-xl: 16px;
+
+  /* ===== Spacing (8pt) ===== */
+  --brand-s-1: 4px;
+  --brand-s-2: 8px;
+  --brand-s-3: 12px;
+  --brand-s-4: 16px;
+  --brand-s-5: 24px;
+  --brand-s-6: 32px;
+  --brand-s-7: 48px;
+  --brand-s-8: 80px;
+  --brand-s-9: 120px;
+
+  /* ===== Shadow ===== */
+  --brand-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.2);
+  --brand-shadow-2: 0 8px 24px -8px rgba(0, 0, 0, 0.6);
+  --brand-shadow-3: 0 24px 60px -20px rgba(0, 0, 0, 0.8);
+}
+
+html, body {
+  background-color: var(--brand-background);
+  color: var(--brand-foreground);
+  font-family: "Inter", "SF Pro Display", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), local('SF Mono'), local('Menlo'), local('Monaco');
+}

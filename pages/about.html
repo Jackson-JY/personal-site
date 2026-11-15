@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Yang — Life in New Zealand</title>
+    <style id="theme-vars">
+:root {
+  /* ===== Dark tech palette ===== */
+  --brand-background: #0A0A0F;
+  --brand-foreground: #F5F5F7;
+  --brand-card: #14141C;
+  --brand-card-foreground: #F5F5F7;
+  --brand-popover: #14141C;
+  --brand-popover-foreground: #F5F5F7;
+  --brand-primary: #00E5C8;
+  --brand-primary-foreground: #0A0A0F;
+  --brand-muted: #1C1C26;
+  --brand-muted-foreground: #8B8B98;
+  --brand-border: #2A2A36;
+  --brand-input: #14141C;
+  --brand-ring: #00E5C8;
+
+  /* ===== Semantic state colors (status only) ===== */
+  --brand-success: #34D399;
+  --brand-warning: #FBBF24;
+  --brand-error: #F87171;
+  --brand-info: #60A5FA;
+
+  /* ===== Radius scale ===== */
+  --brand-radius-xs: 2px;
+  --brand-radius-sm: 4px;
+  --brand-radius-md: 8px;
+  --brand-radius-lg: 12px;
+  --brand-radius-xl: 16px;
+
+  /* ===== Spacing (8pt) ===== */
+  --brand-s-1: 4px;
+  --brand-s-2: 8px;
+  --brand-s-3: 12px;
+  --brand-s-4: 16px;
+  --brand-s-5: 24px;
+  --brand-s-6: 32px;
+  --brand-s-7: 48px;
+  --brand-s-8: 80px;
+  --brand-s-9: 120px;
+
+  /* ===== Shadow ===== */
+  --brand-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.04);
+  --brand-shadow-2: 0 8px 24px -8px rgba(0, 0, 0, 0.18);
+  --brand-shadow-3: 0 24px 60px -20px rgba(0, 0, 0, 0.25);
+}
+
+html, body {
+  background-color: var(--brand-background);
+  color: var(--brand-foreground);
+  font-family: "Inter", "SF Pro Display", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--brand-background);
+    --color-foreground: var(--brand-foreground);
+    --color-card: var(--brand-card);
+    --color-card-foreground: var(--brand-card-foreground);
+    --color-popover: var(--brand-popover);
+    --color-popover-foreground: var(--brand-popover-foreground);
+    --color-primary: var(--brand-primary);
+    --color-primary-foreground: var(--brand-primary-foreground);
+    --color-muted: var(--brand-muted);
+    --color-muted-foreground: var(--brand-muted-foreground);
+    --color-border: var(--brand-border);
+    --color-input: var(--brand-input);
+    --color-ring: var(--brand-ring);
+    --radius-sm: var(--brand-radius-sm);
+    --radius-md: var(--brand-radius-md);
+    --radius-lg: var(--brand-radius-lg);
+    --radius-xl: var(--brand-radius-xl);
+  }
+  @layer base {
+    body { background: var(--brand-background); color: var(--brand-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style id="semantic-token-fallback">
+      .bg-background { background-color: var(--brand-background); }
+      .text-background { color: var(--brand-background); }
+      .border-background { border-color: var(--brand-background); }
+      .ring-background { --tw-ring-color: var(--brand-background); }
+      .bg-foreground { background-color: var(--brand-foreground); }
+      .text-foreground { color: var(--brand-foreground); }
+      .border-foreground { border-color: var(--brand-foreground); }
+      .ring-foreground { --tw-ring-color: var(--brand-foreground); }
+      .bg-card { background-color: var(--brand-card); }
+      .text-card { color: var(--brand-card); }
+      .border-card { border-color: var(--brand-card); }
+      .ring-card { --tw-ring-color: var(--brand-card); }
+      .bg-card-foreground { background-color: var(--brand-card-foreground); }
+      .text-card-foreground { color: var(--brand-card-foreground); }
+      .border-card-foreground { border-color: var(--brand-card-foreground); }
+      .ring-card-foreground { --tw-ring-color: var(--brand-card-foreground); }
+      .bg-popover { background-color: var(--brand-popover); }
+      .text-popover { color: var(--brand-popover); }
+      .border-popover { border-color: var(--brand-popover); }
+      .ring-popover { --tw-ring-color: var(--brand-popover); }
+      .bg-popover-foreground { background-color: var(--brand-popover-foreground); }
+      .text-popover-foreground { color: var(--brand-popover-foreground); }
+      .border-popover-foreground { border-color: var(--brand-popover-foreground); }
+      .ring-popover-foreground { --tw-ring-color: var(--brand-popover-foreground); }
+      .bg-primary { background-color: var(--brand-primary); }
+      .text-primary { color: var(--brand-primary); }
+      .border-primary { border-color: var(--brand-primary); }
+      .ring-primary { --tw-ring-color: var(--brand-primary); }
+      .bg-primary-foreground { background-color: var(--brand-primary-foreground); }
+      .text-primary-foreground { color: var(--brand-primary-foreground); }
+      .border-primary-foreground { border-color: var(--brand-primary-foreground); }
+      .ring-primary-foreground { --tw-ring-color: var(--brand-primary-foreground); }
+      .bg-muted { background-color: var(--brand-muted); }
+      .text-muted { color: var(--brand-muted); }
+      .border-muted { border-color: var(--brand-muted); }
+      .ring-muted { --tw-ring-color: var(--brand-muted); }
+      .bg-muted-foreground { background-color: var(--brand-muted-foreground); }
+      .text-muted-foreground { color: var(--brand-muted-foreground); }
+      .border-muted-foreground { border-color: var(--brand-muted-foreground); }
+      .ring-muted-foreground { --tw-ring-color: var(--brand-muted-foreground); }
+      .bg-border { background-color: var(--brand-border); }
+      .text-border { color: var(--brand-border); }
+      .border-border { border-color: var(--brand-border); }
+      .ring-border { --tw-ring-color: var(--brand-border); }
+      .bg-input { background-color: var(--brand-input); }
+      .text-input { color: var(--brand-input); }
+      .border-input { border-color: var(--brand-input); }
+      .ring-input { --tw-ring-color: var(--brand-input); }
+      .bg-ring { background-color: var(--brand-ring); }
+      .text-ring { color: var(--brand-ring); }
+      .border-ring { border-color: var(--brand-ring); }
+      .ring-ring { --tw-ring-color: var(--brand-ring); }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased bg-background text-foreground overflow-x-hidden">
+    <main>
+      <!-- ===== Header ===== -->
+      <header class="px-6 md:px-10 pt-14 pb-10">
+        <div class="max-w-3xl mx-auto">
+          <div class="flex items-center gap-2.5 mb-8">
+            <span class="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-primary-foreground text-sm font-bold">JY</span>
+            <span class="font-semibold text-foreground tracking-tight">Jackson Yang</span>
+          </div>
+          <p class="text-primary font-mono text-xs tracking-widest uppercase mb-4">A timeline of my life in Aotearoa</p>
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-4">Five cities, one country, a few years of real life.</h1>
+          <p class="text-muted-foreground max-w-xl leading-relaxed">
+            Not a travel diary. These are the places I actually lived, worked and settled into — in order.
+          </p>
+        </div>
+      </header>
+
+      <!-- ===== Timeline ===== -->
+      <section class="px-6 md:px-10 pb-24">
+        <div class="max-w-3xl mx-auto">
+          <div id="timeline" class="relative">
+            <!-- vertical line -->
+            <div class="absolute left-[7px] top-2 bottom-2 w-px bg-border"></div>
+            <p id="timeline-status" class="text-sm text-muted-foreground pl-10">Loading…</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="px-6 md:px-10 py-10 border-t border-border">
+        <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-sm text-muted-foreground">
+          <p>© 2026 Jackson Yang</p>
+          <a href="admin.html" class="font-mono text-xs hover:text-primary transition-colors duration-200">manage &rarr;</a>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      /* ============================================================
+         Giscus configuration — fill these in to turn on comments.
+         Get all four values at https://giscus.app by installing the
+         giscus app on a public GitHub repo with Discussions enabled.
+         ============================================================ */
+      const GISCUS = {
+        repo: "",
+        repoId: "",
+        category: "Announcements",
+        categoryId: ""
+      };
+
+      // Works both in local preview (pages/about.html) and deployed root (index.html)
+      const DATA_URL = new URL(
+        (location.pathname.indexOf("/pages/") !== -1 ? "../" : "") + "data/timeline.json",
+        location.href
+      ).href;
+
+      function esc(value) {
+        return String(value == null ? "" : value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function resolveImage(path) {
+        if (!path) return "";
+        if (/^(https?:|data:)/.test(path)) return path;
+        return new URL(path, DATA_URL).href;
+      }
+
+      function entryMarkup(entry, index, commentsEnabled) {
+        const image = resolveImage(entry.image);
+        const term = "timeline-" + (entry.id || index);
+        const comments = commentsEnabled
+          ? `<button type="button" class="comment-toggle inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-primary transition-colors duration-200" data-term="${esc(term)}">
+               <i data-lucide="message-circle" class="w-4 h-4"></i>
+               <span>Comments</span>
+             </button>
+             <div class="comment-host hidden mt-4"></div>`
+          : `<p class="text-xs text-muted-foreground font-mono">Comments are not configured yet.</p>`;
+
+        return `
+          <article class="relative pl-10 pb-14 group">
+            <span class="absolute left-0 top-2 w-[15px] h-[15px] rounded-full bg-background border-2 border-primary"></span>
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-primary font-mono text-sm">${esc(entry.date)}</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-4">${esc(entry.title)}</h2>
+            ${image ? `<div class="image-slot overflow-hidden rounded-lg mb-4 bg-card" data-image="${esc(entry.image)}" data-alt="${esc(entry.title)}"></div>` : ""}
+            <p class="text-muted-foreground leading-relaxed mb-4">${esc(entry.description)}</p>
+            ${comments}
+          </article>`;
+      }
+
+      function mountGiscus(host, term) {
+        const script = document.createElement("script");
+        script.src = "https://giscus.app/client.js";
+        script.async = true;
+        script.setAttribute("crossorigin", "anonymous");
+        script.dataset.repo = GISCUS.repo;
+        script.dataset.repoId = GISCUS.repoId;
+        script.dataset.category = GISCUS.category;
+        script.dataset.categoryId = GISCUS.categoryId;
+        script.dataset.mapping = "specific";
+        script.dataset.term = term;
+        script.dataset.strict = "1";
+        script.dataset.reactionsEnabled = "1";
+        script.dataset.emitMetadata = "0";
+        script.dataset.inputPosition = "top";
+        script.dataset.theme = "transparent_dark";
+        script.dataset.lang = "en";
+        host.appendChild(script);
+      }
+
+      async function initTimeline() {
+        const container = document.getElementById("timeline");
+        const status = document.getElementById("timeline-status");
+        const commentsEnabled = Boolean(GISCUS.repo && GISCUS.repoId && GISCUS.categoryId);
+
+        let entries = [];
+        try {
+          const response = await fetch(DATA_URL, { cache: "no-store" });
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          const data = await response.json();
+          entries = Array.isArray(data.entries) ? data.entries : [];
+        } catch (error) {
+          status.textContent = "Could not load timeline data.";
+          return;
+        }
+
+        if (!entries.length) {
+          status.textContent = "No timeline entries yet.";
+          return;
+        }
+
+        status.remove();
+        container.insertAdjacentHTML(
+          "afterbegin",
+          entries.map((entry, index) => entryMarkup(entry, index, commentsEnabled)).join("")
+        );
+
+        container.querySelectorAll(".image-slot").forEach((slot) => {
+          const source = resolveImage(slot.dataset.image);
+          if (!source) return;
+          const img = document.createElement("img");
+          img.src = source;
+          img.alt = slot.dataset.alt || "";
+          img.loading = "lazy";
+          img.className =
+            "w-full max-h-[520px] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]";
+          slot.appendChild(img);
+        });
+
+        container.querySelectorAll(".comment-toggle").forEach((button) => {
+          button.addEventListener("click", () => {
+            const host = button.nextElementSibling;
+            if (host.dataset.mounted === "1") {
+              host.classList.toggle("hidden");
+              return;
+            }
+            host.dataset.mounted = "1";
+            host.classList.remove("hidden");
+            mountGiscus(host, button.dataset.term);
+            button.querySelector("span").textContent = "Hide comments";
+          });
+        });
+
+        if (window.lucide) window.lucide.createIcons();
+      }
+
+      initTimeline();
+    </script>
+  </body>
+</html>

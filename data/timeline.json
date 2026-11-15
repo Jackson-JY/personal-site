@@ -1,0 +1,40 @@
+{
+  "updatedAt": "2026-11-15",
+  "entries": [
+    {
+      "id": "auckland-2018",
+      "date": "2018",
+      "title": "Auckland",
+      "description": "My first home in New Zealand. I rented a flat near the waterfront, caught the ferry to work, and spent weekends on Waiheke Island pretending I understood rugby.",
+      "image": "../assets/nz-auckland-skyline.jpg"
+    },
+    {
+      "id": "wellington-2019",
+      "date": "2019",
+      "title": "Wellington",
+      "description": "The windiest city I have ever called home. I worked in the local tech scene, became obsessed with flat whites, and learned to never trust an umbrella here.",
+      "image": "../assets/nz-wellington-waterfront.jpg"
+    },
+    {
+      "id": "queenstown-2020",
+      "date": "2020",
+      "title": "Queenstown",
+      "description": "A season in the adventure capital. I worked remotely by the lake, hiked the Remarkables on weekends, and jumped out of a plane exactly once.",
+      "image": "../assets/nz-queenstown.jpg"
+    },
+    {
+      "id": "christchurch-2021",
+      "date": "2021",
+      "title": "Christchurch",
+      "description": "The rebuild city. I lived near the Avon River, cycled to work through Hagley Park, and watched a city rebuild itself around me.",
+      "image": "../assets/nz-mountains-lake.jpg"
+    },
+    {
+      "id": "auckland-2023",
+      "date": "2023",
+      "title": "Auckland, again",
+      "description": "I came back and it felt like coming home. Finally visited Hobbiton, learned to surf badly, and confirmed New Zealand still has the best coffee on the planet.",
+      "image": "../assets/nz-hobbits-house.jpg"
+    }
+  ]
+}

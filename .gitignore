@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Tooling artifacts
+.preflight/
+.screenshots/
+node_modules/
+runtime-dispatch-manifest.json
+runtime-orchestration-summary.json
+validation-report.json
+finish-readiness-report.json
+
+# Local env
+.env
+.env.local
